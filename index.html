@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIZiWEB - Your Business, On The Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" onclick="showHome()">
+                    <div class="logo-icon">
+                        <span class="logo-text">B</span>
+                    </div>
+                    <span class="logo-name">BIZiWEB</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="navigation">
+                    <button class="nav-item active" data-page="home" onclick="showHome()">HOME</button>
+                    <a href="#services" class="nav-item">ABOUT US</a>
+                    <button class="nav-item" data-page="portfolio" onclick="showPortfolio()">PORTFOLIO</button>
+                    <a href="#faq" class="nav-item">RESOURCES</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <button class="cta-button">BOOK YOUR MEETING</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <!-- Background decorative elements -->
+                <div class="hero-decoration hero-decoration-1"></div>
+                <div class="hero-decoration hero-decoration-2"></div>
+                <div class="hero-decoration hero-decoration-3"></div>
+                <div class="hero-decoration hero-decoration-4"></div>
+                
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <!-- Content -->
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="hero-title-blue">How We</span>
+                                <span class="hero-title-gradient">Kraft</span><br>
+                                <span class="hero-title-blue">Your Online</span><br>
+                                <span class="hero-title-blue">Presence</span>
+                            </h1>
+                            
+                            <p class="hero-description">
+                                Transform your business vision into powerful digital experiences. 
+                                We specialize in creating modern, responsive websites that drive 
+                                engagement and deliver measurable results.
+                            </p>
+
+                            <div class="hero-buttons">
+                                <button class="btn-primary">
+                                    <span>Start Your Project</span>
+                                </button>
+                                <button class="btn-secondary" onclick="showPortfolio()">
+                                    <span>View Portfolio</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Visual Element with floating graphics -->
+                        <div class="hero-visual">
+                            <div class="hero-sphere-container">
+                                <!-- Central sphere -->
+                                <div class="hero-sphere">
+                                    <div class="hero-sphere-inner">
+                                        <div class="hero-sphere-center">
+                                            <span class="hero-sphere-icon">🌐</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Orbiting elements -->
+                                <div class="hero-orbit hero-orbit-1">
+                                    <span class="hero-orbit-icon">💻</span>
+                                </div>
+                                
+                                <div class="hero-orbit hero-orbit-2">
+                                    <span class="hero-orbit-icon">📱</span>
+                                </div>
+                                
+                                <div class="hero-orbit hero-orbit-3">
+                                    <span class="hero-orbit-icon">🎨</span>
+                                </div>
+                                
+                                <div class="hero-orbit hero-orbit-4">
+                                    <span class="hero-orbit-icon">⚡</span>
+                                </div>
+                                
+                                <!-- Connection lines -->
+                                <div class="hero-connection hero-connection-1"></div>
+                                <div class="hero-connection hero-connection-2"></div>
+                                <div class="hero-connection hero-connection-3"></div>
+                                <div class="hero-connection hero-connection-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services">
+                <div class="services-container">
+                    <div class="services-header">
+                        <h2 class="section-title">Our Services</h2>
+                        <p class="section-description">
+                            Comprehensive web solutions designed to help your business succeed online
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Service 1 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="monitor"></i>
+                            </div>
+                            <h3 class="service-title">Web Design & Development</h3>
+                            <p class="service-description">
+                                Custom websites built with modern technologies, responsive design, and optimized for performance.
+                            </p>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <h3 class="service-title">Mobile-First Development</h3>
+                            <p class="service-description">
+                                Websites that work perfectly on all devices, ensuring your audience can reach you anywhere.
+                            </p>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="shopping-cart"></i>
+                            </div>
+                            <h3 class="service-title">E-commerce Solutions</h3>
+                            <p class="service-description">
+                                Complete online stores with payment integration, inventory management, and sales analytics.
+                            </p>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="search"></i>
+                            </div>
+                            <h3 class="service-title">SEO Optimization</h3>
+                            <p class="service-description">
+                                Improve your search rankings and drive organic traffic with our comprehensive SEO strategies.
+                            </p>
+                        </div>
+
+                        <!-- Service 5 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <h3 class="service-title">Digital Marketing</h3>
+                            <p class="service-description">
+                                Grow your online presence with targeted marketing campaigns and social media strategies.
+                            </p>
+                        </div>
+
+                        <!-- Service 6 -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="settings"></i>
+                            </div>
+                            <h3 class="service-title">Maintenance & Support</h3>
+                            <p class="service-description">
+                                Keep your website secure, updated, and performing at its best with our ongoing support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="testimonials-container">
+                    <div class="testimonials-grid">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b77c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMGJ1c2luZXNzfGVufDF8fHx8MTc1ODgwMjQ0Nnww&ixlib=rb-4.1.0&q=80&w=300" alt="Sarah Johnson">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h3 class="testimonial-name">Client Name</h3>
+                                    <p class="testimonial-company">TechStart</p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-stars">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+
+                            <h4 class="testimonial-title">Exceptional Service and Amazing Results</h4>
+
+                            <p class="testimonial-content">
+                                "Exceptional Service and Amazing Results! BIZiWEB transformed our online presence completely. The team's expertise in web development and design is unmatched. Our traffic increased by 300% within the first month."
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBidXNpbmVzc3xlbnwxfHx8fDE3NTg4MDI0NDZ8MA&ixlib=rb-4.1.0&q=80&w=300" alt="Michael Chen">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h3 class="testimonial-name">Client Name</h3>
+                                    <p class="testimonial-company">GrowthCorp</p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-stars">
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                                <i data-lucide="star" class="star filled"></i>
+                            </div>
+
+                            <h4 class="testimonial-title">Exceptional Service and Amazing Results</h4>
+
+                            <p class="testimonial-content">
+                                "Working with BIZiWEB was a game-changer for our business. Their strategic approach to web design and digital marketing delivered results beyond our expectations. Highly recommended for any business looking to grow online."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Approach Section -->
+            <section id="approach" class="approach">
+                <div class="approach-container">
+                    <div class="approach-header">
+                        <h2 class="section-title">Step-by-Step Approach</h2>
+                        <p class="section-description">
+                            We follow a proven methodology to ensure your project's success from concept to completion
+                        </p>
+                    </div>
+
+                    <div class="approach-steps">
+                        <!-- Step 1 -->
+                        <div class="approach-step">
+                            <div class="approach-content">
+                                <div class="approach-step-header">
+                                    <div class="approach-step-number">01</div>
+                                    <h3 class="approach-step-title">Get To Know You</h3>
+                                </div>
+                                <p class="approach-step-description">
+                                    We start by understanding your business goals, target audience, and unique requirements to create a tailored strategy.
+                                </p>
+                            </div>
+                            <div class="approach-image">
+                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWV0aW5nJTIwYnVzaW5lc3MlMjBjb25zdWx0YXRpb258ZW58MXx8fHwxNzU4ODAyNDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Get To Know You">
+                                <div class="approach-step-overlay">01</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="approach-step approach-step-reverse">
+                            <div class="approach-content">
+                                <div class="approach-step-header">
+                                    <div class="approach-step-number">02</div>
+                                    <h3 class="approach-step-title">Explore Your Options</h3>
+                                </div>
+                                <p class="approach-step-description">
+                                    Our design team creates wireframes and explores different approaches that align with your brand and provide exceptional user experience.
+                                </p>
+                            </div>
+                            <div class="approach-image">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBwbGFubmluZ3xlbnwxfHx8fDE3NTg4MDI0NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Explore Your Options">
+                                <div class="approach-step-overlay">02</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="approach-step">
+                            <div class="approach-content">
+                                <div class="approach-step-header">
+                                    <div class="approach-step-number">03</div>
+                                    <h3 class="approach-step-title">Create A Tailored Solution</h3>
+                                </div>
+                                <p class="approach-step-description">
+                                    We build your website using cutting-edge technologies, ensuring it's fast, secure, and perfectly tailored to your needs.
+                                </p>
+                            </div>
+                            <div class="approach-image">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NTg4MDI0NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Create A Tailored Solution">
+                                <div class="approach-step-overlay">03</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="approach-step approach-step-reverse">
+                            <div class="approach-content">
+                                <div class="approach-step-header">
+                                    <div class="approach-step-number">04</div>
+                                    <h3 class="approach-step-title">Deploy The Solution</h3>
+                                </div>
+                                <p class="approach-step-description">
+                                    After thorough testing, we deploy your solution and ensure everything works perfectly across all devices and platforms.
+                                </p>
+                            </div>
+                            <div class="approach-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwbGF1bmNoJTIwZGVwbG95fGVufDF8fHx8MTc1ODgwMjQ0Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Deploy The Solution">
+                                <div class="approach-step-overlay">04</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="approach-step">
+                            <div class="approach-content">
+                                <div class="approach-step-header">
+                                    <div class="approach-step-number">05</div>
+                                    <h3 class="approach-step-title">Celebrate & Keep In Touch</h3>
+                                </div>
+                                <p class="approach-step-description">
+                                    We celebrate your success and provide ongoing support to help you scale your online presence as your business grows.
+                                </p>
+                            </div>
+                            <div class="approach-image">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGNlbGVicmF0aW9uJTIwc3VjY2Vzc3xlbnwxfHx8fDE3NTg4MDI0NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Celebrate & Keep In Touch">
+                                <div class="approach-step-overlay">05</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="approach-cta">
+                        <h3 class="approach-cta-title">Still Confused?</h3>
+                        <p class="approach-cta-description">
+                            Don't worry! We're here to help you understand exactly how we can transform your online presence. 
+                            Book a free consultation and let's discuss your project.
+                        </p>
+                        <button class="approach-cta-button">BOOK NOW</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq">
+                <div class="faq-container">
+                    <div class="faq-header">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="faq-content">
+                        <!-- FAQ Questions -->
+                        <div class="faq-questions">
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>What type of businesses do you work with?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We work with businesses of all sizes, from startups to enterprise companies. Our experience spans across various industries including technology, healthcare, e-commerce, professional services, and more.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>How long does a typical project take?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Project timelines vary depending on complexity and scope. A basic business website typically takes 2-4 weeks, while more complex applications can take 8-16 weeks. We'll provide a detailed timeline during our initial consultation.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Do you provide ongoing support after launch?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes! We offer comprehensive maintenance and support packages to keep your website secure, updated, and performing optimally. This includes regular backups, security updates, and technical support.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Can you help with digital marketing and SEO?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Absolutely! In addition to web development, we offer digital marketing services including SEO optimization, content strategy, social media management, and paid advertising campaigns.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Do you work with existing websites or only new builds?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We work with both! Whether you need a complete redesign, functionality improvements, or just want to modernize your existing site, we can help enhance your current digital presence.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>What's your approach to mobile responsiveness?</span>
+                                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>All our websites are built with a mobile-first approach, ensuring they look and function perfectly on all devices. We test extensively across different screen sizes and browsers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ CTA Cards -->
+                        <div class="faq-cta-cards">
+                            <!-- Startup Card -->
+                            <div class="faq-cta-card">
+                                <div class="faq-cta-content">
+                                    <div class="faq-cta-image">
+                                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwYnVzaW5lc3MlMjB0ZWFtfGVufDF8fHx8MTc1ODgwMjQ0Nnww&ixlib=rb-4.1.0&q=80&w=300" alt="Startup team">
+                                    </div>
+                                    <div class="faq-cta-info">
+                                        <h4 class="faq-cta-title">Get Website for Your Startup</h4>
+                                        <p class="faq-cta-description">
+                                            Launch your startup with a professional website that converts visitors into customers.
+                                        </p>
+                                        <div class="faq-cta-action">
+                                            <button class="faq-cta-button">Get Website</button>
+                                            <span class="faq-cta-price">from £50 /month</span>
+                                        </div>
+                                        <p class="faq-cta-or">OR</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brand Card -->
+                            <div class="faq-cta-card">
+                                <div class="faq-cta-content">
+                                    <div class="faq-cta-image">
+                                        <img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZGluZyUyMGRlc2lnbiUyMGNyZWF0aXZlfGVufDF8fHx8MTc1ODgwMjQ0Nnww&ixlib=rb-4.1.0&q=80&w=300" alt="Brand design">
+                                    </div>
+                                    <div class="faq-cta-info">
+                                        <h4 class="faq-cta-title">Create Your Own Brand</h4>
+                                        <p class="faq-cta-description">
+                                            Build a strong brand identity with our comprehensive branding and design services.
+                                        </p>
+                                        <div class="faq-cta-action">
+                                            <button class="faq-cta-button">Get Started</button>
+                                            <span class="faq-cta-price">from £100 /month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Portfolio Page -->
+        <div id="portfolio-page" class="page">
+            <section class="portfolio">
+                <div class="portfolio-container">
+                    <div class="portfolio-header">
+                        <h1 class="portfolio-title">Portfolio Showcase</h1>
+                        <p class="portfolio-description">
+                            Explore our recent projects and discover how we've helped businesses 
+                            transform their digital presence with innovative solutions and exceptional design
+                        </p>
+                    </div>
+
+                    <!-- Filter Buttons -->
+                    <div class="portfolio-filters">
+                        <div class="filter-wrapper">
+                            <i data-lucide="filter" class="filter-icon"></i>
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web-application">Web Application</button>
+                            <button class="filter-btn" data-filter="e-commerce">E-commerce</button>
+                            <button class="filter-btn" data-filter="landing-page">Landing Page</button>
+                            <button class="filter-btn" data-filter="corporate-site">Corporate Site</button>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Grid -->
+                    <div class="portfolio-grid">
+                        <!-- Portfolio Item 1 -->
+                        <div class="portfolio-item" data-category="web-application">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwc2hvd2Nhc2V8ZW58MXx8fHwxNzU4ODAyNDU0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="TechStart Platform">
+                                
+                                <div class="portfolio-overlay">
+                                    <button class="portfolio-view-btn" onclick="window.open('https://example-techstart.com', '_blank')">
+                                        View Project <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+
+                                <div class="portfolio-badge">
+                                    <i data-lucide="monitor"></i>
+                                    <span>Web Application</span>
+                                </div>
+
+                                <div class="portfolio-number">01</div>
+                            </div>
+
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-item-title">TechStart Platform</h3>
+                                <p class="portfolio-category">SaaS Application</p>
+                                
+                                <p class="portfolio-item-description">
+                                    A comprehensive business management platform for startups with analytics dashboard and user management.
+                                </p>
+
+                                <div class="portfolio-technologies">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                </div>
+
+                                <button class="portfolio-btn" onclick="window.open('https://example-techstart.com', '_blank')">
+                                    Visit Website <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio Item 2 -->
+                        <div class="portfolio-item" data-category="e-commerce">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1694599048261-a1de00f0117e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc1ODY5Nzc3OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="E-Commerce Store">
+                                
+                                <div class="portfolio-overlay">
+                                    <button class="portfolio-view-btn" onclick="window.open('https://example-ecommerce.com', '_blank')">
+                                        View Project <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+
+                                <div class="portfolio-badge">
+                                    <i data-lucide="shopping-cart"></i>
+                                    <span>E-commerce</span>
+                                </div>
+
+                                <div class="portfolio-number">02</div>
+                            </div>
+
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-item-title">E-Commerce Store</h3>
+                                <p class="portfolio-category">Online Retail</p>
+                                
+                                <p class="portfolio-item-description">
+                                    Modern e-commerce website with payment integration, inventory management, and customer analytics.
+                                </p>
+
+                                <div class="portfolio-technologies">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Stripe</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Vercel</span>
+                                </div>
+
+                                <button class="portfolio-btn" onclick="window.open('https://example-ecommerce.com', '_blank')">
+                                    Visit Website <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio Item 3 -->
+                        <div class="portfolio-item" data-category="landing-page">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1642132652806-8aa09801c2ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHdlYnNpdGUlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzE2NTU0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile App Landing">
+                                
+                                <div class="portfolio-overlay">
+                                    <button class="portfolio-view-btn" onclick="window.open('https://example-mobile-app.com', '_blank')">
+                                        View Project <i data-lucide="external-link"></i>
+                                    </button>
+                                </div>
+
+                                <div class="portfolio-badge">
+                                    <i data-lucide="smartphone"></i>
+                                    <span>Landing Page</span>
+                                </div>
+
+                                <div class="portfolio-number">03</div>
+                            </div>
+
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-item-title">Mobile App Landing</h3>
+                                <p class="portfolio-category">Mobile App</p>
+                                
+                                <p class="portfolio-item-description">
+                                    Responsive landing page for a mobile application with app store integration and user testimonials.
+                                </p>
+
+                                <div class="portfolio-technologies">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">GSAP</span>
+                                    <span class="tech-tag">Netlify</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                </div>
+
+                                <button class="portfolio-btn" onclick="window.open('https://example-mobile-app.com', '_blank')">
+                                    Visit Website <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Add more portfolio items as needed -->
+                    </div>
+
+                    <!-- Portfolio CTA -->
+                    <div class="portfolio-cta">
+                        <h2 class="portfolio-cta-title">
+                            <span class="gradient-text">Ready to Start</span><br>
+                            <span>Your Project?</span>
+                        </h2>
+                        
+                        <p class="portfolio-cta-description">
+                            Let's discuss how we can help transform your business with a custom 
+                            web solution tailored to your unique needs and goals.
+                        </p>
+                        
+                        <div class="portfolio-cta-buttons">
+                            <button class="btn-primary">
+                                <span>Get Started Today</span>
+                            </button>
+                            
+                            <button class="btn-secondary">
+                                <span>Schedule Consultation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span class="footer-logo-text">B</span>
+                        </div>
+                        <span class="footer-logo-name">BIZiWEB</span>
+                    </div>
+                    
+                    <p class="footer-description">
+                        Your trusted partner for creating exceptional web experiences that drive business growth.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="showHome()">Home</a></li>
+                        <li><a href="#services">About Us</a></li>
+                        <li><a href="#portfolio" onclick="showPortfolio()">Portfolio</a></li>
+                        <li><a href="#faq">Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><span>Web Design</span></li>
+                        <li><span>Development</span></li>
+                        <li><span>E-commerce</span></li>
+                        <li><span>SEO</span></li>
+                        <li><span>Digital Marketing</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" class="footer-contact-icon"></i>
+                            <span>hello@biziweb.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" class="footer-contact-icon"></i>
+                            <span>+44 20 1234 5678</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" class="footer-contact-icon"></i>
+                            <span>London, United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 <span class="footer-brand">BIZiWEB</span>. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
